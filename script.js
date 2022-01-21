@@ -39,11 +39,15 @@ lcasechar = confirm("Include Lower Case");
 ucasechar = confirm("Include upper Case");
 ncasechar = confirm("Include Numerical Characters");
 scasechar = confirm("Include Special Characters Case");
+if ( lcasechar==0 && ucasechar == 0 && ncasechar == 0 && scasechar ==0 ) // if no requirmrnt is selected text showing error is dispalyed
+{alert ("select atleast one requirement")
+return "Password  Generation Error";}
 finalpassword="0";
 finalpassword = writePasswordfirst()
 return finalpassword;}
 
-else { alert("not possible");}
+else { alert("Basic requirment not met!!!")
+return "Password  Generation Error";}
 }}
 function writePasswordfirst() {
 
